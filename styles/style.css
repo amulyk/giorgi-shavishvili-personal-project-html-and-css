@@ -849,13 +849,23 @@ header {
     left: 161px;
     z-index:1;
 }
-.resent-products .prod_items > div:hover p .plus:after {
+
+ .plushover:hover + .plus::after {
+display: inline-block;
+ }
+
+ .prod_info .plus:hover::after{
+display: inline-block;
+ }
+
+.prod_info  .plus::after {
     content: '+';
     color: #fff;
     width: 10px;
     height: 10px;
     position: absolute;
     left: 24px;
+    display: none;
 }
 
 /* second feature end */
