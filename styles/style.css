@@ -610,6 +610,7 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    color: #A1B1BC;
 }
 
 .small-image-bot {
@@ -848,13 +849,14 @@ header {
     border-radius: 5px;
     left: 161px;
     z-index:1;
+    display: none;
 }
 
- .plushover:hover + .plus::after {
-display: inline-block;
+ .plushover:hover  + .plus {
+    display: inline-block !important;
  }
 
- .prod_info .plus:hover::after{
+ .plushover:hover  + .plus::after{
 display: inline-block;
  }
 
@@ -876,6 +878,9 @@ display: inline-block;
     background:#ECF0F1;
     padding-top:96px;
     padding-bottom:71px;
+   
+}
+.wrap-news{
     width: 1177px;
     margin:  auto;
 }
@@ -1240,9 +1245,13 @@ display: inline-block;
     content: "";
     background: #E5E5E5;
     width: 2px;
-    height: 36px;
+    height: 37px;
     left: 0;
     top: -21px;
+}
+
+.service-row.image .service-right::after {
+    height: 41px;
 }
 
 .service-row:hover .service-left p {
