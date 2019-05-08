@@ -1249,6 +1249,9 @@ display: inline-block;
     font-family: 'Lato';
     font-weight: 700;
     color: #1ABC9C;
+    position: relative;
+    left: -2px;
+    top: 1px;
 
 }
 
